@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0f1e;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    background: linear-gradient(90deg, #1b1f38, #13172b);
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #00d4ff;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative; /* Posiziona l'elemento in modo relativo rispetto al contenitore padre */
+    background-color: #f0f0f0; /* Colore di sfondo di fallback */
+    color: #ffffff; /* Colore del testo */
+    height: 100vh; /* Altezza pari al 100% della viewport */
+    display: flex; /* Imposta il display a flessione */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Allinea orizzontalmente al centro */
+    text-align: center; /* Allinea il testo al centro */
+    overflow: hidden; /* Assicurati che gli elementi figli non escano dai limiti */
+}
+
+/* Immagine di sfondo */
+.hero-section .background-image {
+    position: absolute; /* Posiziona l'elemento in modo assoluto rispetto al contenitore padre */
+    top: 0; /* Allinea in alto */
+    left: 0; /* Allinea a sinistra */
+    width: 100%; /* Larghezza pari al 100% */
+    height: 100%; /* Altezza pari al 100% */
+    background-size: cover; /* Copre l'intera area con l'immagine */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    transition: opacity 1s ease-in-out; /* Aggiunge un'animazione di dissolvenza */
+    opacity: 0; /* Imposta l'opacità a 0 per nascondere l'immagine */
+}
+
+/* Immagine di sfondo attiva */
+.hero-section .background-image.active {
+    opacity: 1; /* Mostra l'immagine con opacità al 100% */
+}
+
+.hero-section .overlay {
+    position: absolute; /* Posiziona l'elemento in modo assoluto rispetto al contenitore padre */
+    top: 0; /* Allinea in alto */
+    left: 0; /* Allinea a sinistra */
+    width: 100%; /* Larghezza pari al 100% */
+    height: 100%; /* Altezza pari al 100% */
+    background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
+    z-index: 1; /* Imposta il livello di sovrapposizione */
+}
+
+.hero-section .container {
+    position: relative; /* Posiziona l'elemento in modo relativo rispetto al contenitore padre */
+    z-index: 2; /* Imposta il livello di sovrapposizione */
+}
+
+.hero-section .container {
+    position: relative; /* Posiziona l'elemento in modo relativo rispetto al contenitore padre */
+    z-index: 2; /* Imposta il livello di sovrapposizione */
+}
+
+.hero-section h1 {
+    font-weight: 600; /* Spessore del font */
+    font-size: 3rem; /* Dimensione del font */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+}
+
+.hero-section p {
+    font-weight: 300; /* Spessore del font */
+    font-size: 1.5rem; /* Dimensione del font */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    letter-spacing: 1px; /* Spaziatura tra le lettere */
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    padding: 80px 5vw 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+    background: #1b1f38;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #00d4ff;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #1a73e8;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+p, canvas {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.map-container {
+    position: relative;
+    padding-top: 40%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.map-container iframe {
+    position: absolute; /* Posiziona l'iframe in modo assoluto all'interno del contenitore */
+    top: 0; /* Allinea l'iframe in alto */
+    left: 0; /* Allinea l'iframe a sinistra */
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    height: 100%; /* Imposta l'altezza al 100% del contenitore */
+    border: 0; /* Rimuove il bordo dell'iframe */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b1f38;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+}
+
+.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(5px);
+}
+
+.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #13172b;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
