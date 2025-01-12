@@ -12,8 +12,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
-
 header {
     background: linear-gradient(90deg, #1b1f38, #13172b);
     padding: 10px;
@@ -73,7 +71,6 @@ img {
     height: 100%; /* Imposta l'altezza al 100% del contenitore */
     border: 0; /* Rimuove il bordo dell'iframe */
 }
-
 
 @media (max-width: 768px) {
     .nav-links {

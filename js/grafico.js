@@ -2,21 +2,21 @@ var options = {
     chart: {
         type: 'donut',
         height: 300,
-        background: '#0a0f1e', // Sfondo scuro
-        foreColor: '#00d4ff'   // Colore del testo in stile neon
+        background: '#0a0f1e',
+        foreColor: '#00d4ff'
     },
     series: [10, 5, 15, 35, 25, 10], // Dati esemplificativi per LTE, 2G, 3G, 4G, 5G
     labels: ['Antenne LTE', 'Antenne 2G', 'Antenne 3G', 'Antenne 4G', 'Antenne 5G'],
-    colors: ['#1b1f38', '#13172b', '#0e1230', '#151a40', '#19204c'], // Palette di colori in tonalità di blu scuro
+    colors: ['#1b1f38', '#13172b', '#0e1230', '#151a40', '#19204c'],
     stroke: {
         show: true,
-        colors: '#00d4ff', // Bordo in stile neon
+        colors: '#00d4ff',
         width: 2
     },
     dataLabels: {
         enabled: true,
         style: {
-            colors: ['#ffffff'], // Colore dei dati
+            colors: ['#ffffff'],
             fontSize: '14px',
             fontFamily: 'Roboto, sans-serif',
             fontWeight: 'bold'

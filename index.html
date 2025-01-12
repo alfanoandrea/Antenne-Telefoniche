@@ -1,143 +1,155 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/icon.ico">
-    <title>Antenne Telefoniche</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/icon.ico">
+        <title>Antenne Telefoniche</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/default.css">
-    <script src="js/navbarMotion.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/default.css">
+        <script src="js/navbarMotion.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <a class="logo-container" href="index.html">
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <span class="navbar-brand">GRUPPO 2</span>
-        </a>
-        <button class="navbar-toggler modern-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#storia">Storia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#antenne">Antenna</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#considerazioni">Considerazioni</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#grafici">Statistiche</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#mappa">Posizione</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <!-- Hero Section -->
-    <header id="home" class="hero-section">
-        <div class="overlay"></div> 
-        <div class="container text-center text-white">
-            <h1 class="display-4" data-aos="fade-down">Antenne Telefoniche</h1>
-            <p class="lead" data-aos="fade-up">Alfano Andrea - Marini Cesare - Merelli Gabriele - Montieri Vincenzo</p>
-        </div>
-    </header>
-    <script src="js/heroScript.js"></script>
-
-    <main>
-        <section id="storia" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-left">
-            <div style="flex: 1;">
-                <h2>Storia di Ospitaletto</h2>
-                <p>Ospitaletto, comune della provincia di Brescia, è caratterizzato da una storia industriale ricca e da un'evoluzione tecnologica marcata, che ha contribuito significativamente al suo sviluppo economico e sociale nel corso degli anni. La sua posizione strategica, a pochi chilometri da Brescia e Milano, ha reso Ospitaletto un punto nevralgico per il commercio e l'industria sin dai primi decenni del Novecento.</p>
-                <p>L'industria locale ha visto un notevole sviluppo nel settore meccanico, tessile e metallurgico, con la nascita di numerose piccole e medie imprese che hanno dato lavoro a molte famiglie. Ospitaletto ha saputo adattarsi alle sfide della globalizzazione e della digitalizzazione, con un crescente interesse per le innovazioni tecnologiche, che hanno portato all'introduzione di nuove tecniche produttive e all'adozione di soluzioni ecologiche nelle industrie locali.</p>
-                <img src="images/ospitaletto2.webp" alt="Immagine del Comune di Ospitaletto" data-aos="zoom-in">
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="logo-container" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <span class="navbar-brand">GRUPPO 2</span>
+            </a>
+            <button class="navbar-toggler modern-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#storia">Storia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#antenne">Antenna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#considerazioni">Considerazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#grafici">Statistiche</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mappa">Posizione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noi">Gruppo</a>
+                    </li>
+                </ul>
             </div>
-            <div style="flex: 1;">
-                <img src="images/ospitaletto1.webp" alt="Immagine del Comune di Ospitaletto" data-aos="zoom-in">
-                <p>Il ruolo delle telecomunicazioni è stato fondamentale per il progresso della comunità locale. La diffusione della rete telefonica e successivamente della connessione a Internet ha migliorato notevolmente la comunicazione tra le aziende e con il resto del mondo. Questo sviluppo ha facilitato la nascita di nuove imprese nel settore dei servizi, del software e della consulenza, dando impulso a un'ulteriore crescita economica. La digitalizzazione ha anche migliorato la qualità della vita dei cittadini, rendendo i servizi pubblici più efficienti e accessibili.</p>          
-                <p>Nel corso degli anni, Ospitaletto ha saputo coniugare tradizione e innovazione, mantenendo un forte legame con la sua storia industriale, pur proiettandosi verso un futuro tecnologicamente avanzato. L'attenzione alle infrastrutture e la crescita delle telecomunicazioni continueranno a giocare un ruolo chiave nel garantire la competitività e il benessere della comunità.</p>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home" class="hero-section">
+            <div class="overlay"></div> 
+            <div class="container text-center text-white">
+                <h1 class="display-4" data-aos="fade-down">Antenne Telefoniche</h1>
+                <p class="lead" data-aos="fade-up">Alfano Andrea - Marini Cesare - Merelli Gabriele - Montieri Vincenzo</p>
             </div>
-        </section>
+        </header>
+        <script src="js/heroScript.js"></script>
+
+        <main>
+            <!-- Storia -->
+            <section id="storia" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-left">
+                <div style="flex: 1;">
+                    <h2>Storia di Ospitaletto</h2>
+                    <p>Ospitaletto, comune della provincia di Brescia, è caratterizzato da una storia industriale ricca e da un'evoluzione tecnologica marcata, che ha contribuito significativamente al suo sviluppo economico e sociale nel corso degli anni. La sua posizione strategica, a pochi chilometri da Brescia e Milano, ha reso Ospitaletto un punto nevralgico per il commercio e l'industria sin dai primi decenni del Novecento. L'industria locale ha visto un notevole sviluppo nel settore meccanico, tessile e metallurgico, con la nascita di numerose piccole e medie imprese che hanno dato lavoro a molte famiglie. Ospitaletto ha saputo adattarsi alle sfide della globalizzazione e della digitalizzazione, con un crescente interesse per le innovazioni tecnologiche, che hanno portato all'introduzione di nuove tecniche produttive e all'adozione di soluzioni ecologiche nelle industrie locali.</p>
+                    <img src="images/ospitaletto2.webp" alt="Immagine del Comune di Ospitaletto" data-aos="zoom-in">
+
+                </div>
+                <div style="flex: 1;">
+                    <img src="images/ospitaletto1.webp" alt="Immagine del Comune di Ospitaletto" data-aos="zoom-in">
+                    <p>Il ruolo delle telecomunicazioni è stato fondamentale per il progresso della comunità locale. La diffusione della rete telefonica e successivamente della connessione a Internet ha migliorato notevolmente la comunicazione tra le aziende e con il resto del mondo. Questo sviluppo ha facilitato la nascita di nuove imprese nel settore dei servizi, del software e della consulenza, dando impulso a un'ulteriore crescita economica. La digitalizzazione ha anche migliorato la qualità della vita dei cittadini, rendendo i servizi pubblici più efficienti e accessibili. Nel corso degli anni, Ospitaletto ha saputo coniugare tradizione e innovazione, mantenendo un forte legame con la sua storia industriale, pur proiettandosi verso un futuro tecnologicamente avanzato. L'attenzione alle infrastrutture e la crescita delle telecomunicazioni continueranno a giocare un ruolo chiave nel garantire la competitività e il benessere della comunità.</p>
+                </div>
+            </section>
         
+            <!-- Antenne -->
+            <section id="antenne" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-right">
+                <div style="flex: 1;">
+                    <h2>Cos'è un'Antenna Telefonica?</h2>
+                    <img src="images/5g.webp" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
+                    <p>Un'antenna telefonica è un componente essenziale per la trasmissione e la ricezione dei segnali radio nelle reti mobili. Le principali tecnologie di rete includono il 2G, che ha introdotto la comunicazione digitale e l'SMS; il 3G, che ha permesso l'accesso a Internet mobile e le videochiamate; il 4G, che ha portato velocità elevate per lo streaming e il cloud computing, tramite tecnologie come LTE (Long Term Evolution), che offre connessioni veloci e stabili; e il 5G, che offre velocità ultraveloci, latenza ridotta e supporta tecnologie avanzate come la realtà aumentata e l'Internet delle cose (IoT).</p>
+                </div>
+                <div style="flex: 1;">
+                    <p>Le antenne moderne, progettate per supportare più bande di frequenza, migliorano la qualità del segnale, aumentando la velocità e la stabilità della connessione. Le frequenze 5G, ad esempio, utilizzano onde millimetriche per una maggiore capacità di trasmissione, sebbene richiedano più antenne per garantire una copertura efficiente. Queste tecnologie sono sviluppate nel rispetto delle normative ambientali e sanitarie, minimizzando l'impatto delle onde elettromagnetiche. In questo modo, le antenne contribuiscono a un miglioramento continuo della connettività mobile, con un focus sulla sostenibilità e sull'innovazione.</p>
+                    <img src="images/antenna1.webp" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
+                </div>
+            </section>
 
-        <section id="antenne" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-right">
-            <div style="flex: 1;">
-                <h2>Cos'è un'Antenna Telefonica?</h2>
-                <img src="images/5g.webp" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
-                <p>Un'antenna telefonica è un componente essenziale per la trasmissione e la ricezione dei segnali radio nelle reti mobili. Le principali tecnologie di rete includono il 2G, che ha introdotto la comunicazione digitale e l'SMS; il 3G, che ha permesso l'accesso a Internet mobile e le videochiamate; il 4G, che ha portato velocità elevate per lo streaming e il cloud computing, tramite tecnologie come LTE (Long Term Evolution), che offre connessioni veloci e stabili; e il 5G, che offre velocità ultraveloci, latenza ridotta e supporta tecnologie avanzate come la realtà aumentata e l'Internet delle cose (IoT).</p>
-            </div>
-            <div style="flex: 1;">
-                <p>Le antenne moderne, progettate per supportare più bande di frequenza, migliorano la qualità del segnale, aumentando la velocità e la stabilità della connessione. Le frequenze 5G, ad esempio, utilizzano onde millimetriche per una maggiore capacità di trasmissione, sebbene richiedano più antenne per garantire una copertura efficiente. Queste tecnologie sono sviluppate nel rispetto delle normative ambientali e sanitarie, minimizzando l'impatto delle onde elettromagnetiche. In questo modo, le antenne contribuiscono a un miglioramento continuo della connettività mobile, con un focus sulla sostenibilità e sull'innovazione.</p>
-                <img src="images/antenna1.webp" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
-            </div>
-        </section>
+            <!-- Considerazioni -->
+            <section id="considerazioni" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-left">
+                <div style="flex: 1;">
+                    <h2>Considerazioni Personali</h2>
+                    <p>Il dibattito sulle antenne riguarda principalmente salute e impatto visivo. Le antenne 4G e 5G, pur non avendo prove scientifiche di danni alla salute, continuano a suscitare preoccupazioni. Anche l’aspetto visivo delle torri è un problema, soprattutto in aree residenziali e storiche.</p>
+                    <img src="images/antenne.gif" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
+                </div>
+                <div style="flex: 1;">
+                    <img src="images/antenna2.webp" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
+                    <p>Noi, Alfano Andrea, Marini Cesare, Merelli Gabriele e Montieri Vincenzo, crediamo fermamente che la trasparenza e il dialogo siano fondamentali per costruire un rapporto positivo tra cittadini e tecnologia. Solo attraverso un'informazione chiara e un coinvolgimento attivo della comunità si possono ridurre le preoccupazioni e favorire l'accettazione delle nuove infrastrutture. A Ospitaletto, ad esempio, le antenne sono state progettate con attenzione per integrarsi armoniosamente nel paesaggio urbano, minimizzando l'impatto visivo e senza compromettere la qualità della vita dei residenti. Al contempo, sono state garantite prestazioni adeguate per soddisfare le crescenti esigenze di connettività della popolazione. Questo approccio equilibrato dimostra che è possibile unire progresso tecnologico e rispetto per l’ambiente, e potrebbe fungere da esempio per altre realtà che affrontano sfide simili.</p>
+                </div>
+            </section>
 
-        <section id="considerazioni" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-left">
-            <div style="flex: 1;">
-                <h2>Considerazioni Personali</h2>
-                <p>Il dibattito sulle antenne riguarda principalmente salute e impatto visivo. Le antenne 4G e 5G, pur non avendo prove scientifiche di danni alla salute, continuano a suscitare preoccupazioni. Anche l’aspetto visivo delle torri è un problema, soprattutto in aree residenziali e storiche.</p>
-                <img src="images/antenne.gif" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
-            </div>
-            <div style="flex: 1;">
-                <img src="images/antenna2.webp" alt="Schema di un'antenna telefonica" data-aos="zoom-in">
-                <p>Noi, Alfano Andrea, Marini Cesare, Merelli Gabriele e Montieri Vincenzo, crediamo fermamente che la trasparenza e il dialogo siano fondamentali per costruire un rapporto positivo tra cittadini e tecnologia. Solo attraverso un'informazione chiara e un coinvolgimento attivo della comunità si possono ridurre le preoccupazioni e favorire l'accettazione delle nuove infrastrutture.
+            <!-- Grafici -->
+            <section id="grafici" data-aos="fade-right">
+                <h2 class="color: #0ff; font-family: 'Roboto', sans-serif;">Dati e Statistiche</h2>
+                <div id="chart"></div>
+                <script src="js/grafico.js"></script>
+            </section>
+            
+            <!-- Mappa -->
+            <section id="mappa" class="section mb-5" data-aos="fade-left">
+                <h2 class="color: #0ff; font-family: 'Roboto', sans-serif;">Posizione di Ospitaletto</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44701.0074150115!2d10.040527350500671!3d45.55408794495956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478171c215f62b5d%3A0xc7fba9b1d5788181!2s25035%20Ospitaletto%20BS!5e0!3m2!1sit!2sit!4v1736682272101!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
 
-                    A Ospitaletto, ad esempio, le antenne sono state progettate con attenzione per integrarsi armoniosamente nel paesaggio urbano, minimizzando l'impatto visivo e senza compromettere la qualità della vita dei residenti. Al contempo, sono state garantite prestazioni adeguate per soddisfare le crescenti esigenze di connettività della popolazione. Questo approccio equilibrato dimostra che è possibile unire progresso tecnologico e rispetto per l’ambiente, e potrebbe fungere da esempio per altre realtà che affrontano sfide simili.</p>
+            <!-- Chi Siamo -->
+            <section id="noi" style="display: flex; align-items: flex-start; gap: 20px;" data-aos="fade-left">
+                <div style="flex: 1;">
+                    <h2>Chi Siamo?</h2>
+                    <p>Il Gruppo 2 di Telecomunicazioni è una vera antenna di talento, sempre sintonizzata sulle frequenze dell'innovazione! Alfano Andrea è la scintilla creativa che trasforma ogni idea in un’onda portante di ispirazione. Marini Cesare monta i circuiti con precisione millimetrica, mantenendo ogni segnale senza interferenze. Merelli Gabriele domina Multisim come un oscillatore perfetto, simulando progetti a ciclo continuo. Montieri Vincenzo, l’architetto dei circuiti, traccia percorsi elettrici con l’armonia di una sinusoide ben calibrata. Insieme, amplificano le idee e modulano soluzioni che viaggiano dritte verso il futuro!</p>
+                    <img src="images/astronauti.webp" alt="Missione Apollo" data-aos="zoom-in">
+                </div>
+                <div style="flex: 1;">
+                    <img src="images/scienziati.webp" alt="Foto Diploma Alfano" data-aos="zoom-in">
+                </div>
+            </section>
+        </main>
 
-            </div>
-        </section>
-
-        <section id="grafici" data-aos="fade-right">
-            <h2 class="color: #0ff; font-family: 'Roboto', sans-serif;">Dati e Statistiche</h2>
-            <div id="chart"></div>
-            <script src="js/grafico.js"></script>
-        </section>
-        
-
-        <section id="mappa" class="section mb-5" data-aos="fade-left">
-            <h2 class="color: #0ff; font-family: 'Roboto', sans-serif;">Posizione di Ospitaletto</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44701.0074150115!2d10.040527350500671!3d45.55408794495956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478171c215f62b5d%3A0xc7fba9b1d5788181!2s25035%20Ospitaletto%20BS!5e0!3m2!1sit!2sit!4v1736682272101!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Antenne Telefoniche a Ospitaletto - Sviluppato da Andrea Alfano</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-   <script>
-        AOS.init(); // Inizializzazione AOS
-        $(document).ready(function() {
-            $('.nav-link').hover(
-                function() {
-                    $(this).animate({ paddingLeft: '20px' }, 200);
-                },
-                function() {
-                    $(this).animate({ paddingLeft: '15px' }, 200);
-                }
-            );
-        });
-    </script>
-
-</body>
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Antenne Telefoniche a Ospitaletto - Sviluppato da Andrea Alfano</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            $(document).ready(function() {
+                $('.nav-link').hover(
+                    function() {
+                        $(this).animate({ paddingLeft: '20px' }, 200);
+                    },
+                    function() {
+                        $(this).animate({ paddingLeft: '15px' }, 200);
+                    }
+                );
+            });
+        </script>
+    </body>
 </html>
