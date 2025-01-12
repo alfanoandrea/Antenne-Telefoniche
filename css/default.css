@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html, body {
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+    width: 100%; /* Imposta la larghezza al 100% */
+    overflow-x: hidden; /* Evita lo scroll orizzontale */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Imposta il font predefinito per il corpo del documento */
+}
+
+h1, h2, p {
+    font-family: 'Poppins', sans-serif; /* Imposta il font per gli elementi h1, h2 e p */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative; /* Posiziona l'elemento in modo relativo rispetto al contenitore padre */
+    background-color: #f0f0f0; /* Colore di sfondo di fallback */
+    color: #000; /* Colore del testo */
+    height: 100vh; /* Altezza pari al 100% della viewport */
+    display: flex; /* Imposta il display a flessione */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Allinea orizzontalmente al centro */
+    text-align: center; /* Allinea il testo al centro */
+    overflow: hidden; /* Assicurati che gli elementi figli non escano dai limiti */
+}
+
+/* Immagine di sfondo */
+.hero-section .background-image {
+    position: absolute; /* Posiziona l'elemento in modo assoluto rispetto al contenitore padre */
+    top: 0; /* Allinea in alto */
+    left: 0; /* Allinea a sinistra */
+    width: 100%; /* Larghezza pari al 100% */
+    height: 100%; /* Altezza pari al 100% */
+    background-size: cover; /* Copre l'intera area con l'immagine */
+    background-position: center; /* Centra l'immagine */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    transition: opacity 1s ease-in-out; /* Aggiunge un'animazione di dissolvenza */
+    opacity: 0; /* Imposta l'opacità a 0 per nascondere l'immagine */
+}
+
+/* Immagine di sfondo attiva */
+.hero-section .background-image.active {
+    opacity: 1; /* Mostra l'immagine con opacità al 100% */
+}
+
+.hero-section .overlay {
+    position: absolute; /* Posiziona l'elemento in modo assoluto rispetto al contenitore padre */
+    top: 0; /* Allinea in alto */
+    left: 0; /* Allinea a sinistra */
+    width: 100%; /* Larghezza pari al 100% */
+    height: 100%; /* Altezza pari al 100% */
+    background: rgba(0, 0, 0, 0.5); /* Overlay semi-trasparente */
+    z-index: 1; /* Imposta il livello di sovrapposizione */
+}
+
+.hero-section .container {
+    position: relative; /* Posiziona l'elemento in modo relativo rispetto al contenitore padre */
+    z-index: 2; /* Imposta il livello di sovrapposizione */
+}
+
+.hero-section .container {
+    position: relative; /* Posiziona l'elemento in modo relativo rispetto al contenitore padre */
+    z-index: 2; /* Imposta il livello di sovrapposizione */
+}
+
+.hero-section h1 {
+    font-weight: 600; /* Spessore del font */
+    font-size: 3rem; /* Dimensione del font */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+}
+
+.hero-section p {
+    font-weight: 300; /* Spessore del font */
+    font-size: 1.2rem; /* Dimensione del font */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    letter-spacing: 1px; /* Spaziatura tra le lettere */
+}
+
+/* Service Boxes */
+.service-box {
+    background-color: #d8d8d8; /* Colore di sfondo */
+    padding: 20px; /* Spaziatura interna */
+    border: 1px solid #414141; /* Bordo */
+    border-radius: 5px; /* Arrotondamento del bordo */
+    margin-top: 20px; /* Spaziatura superiore */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aggiunge una transizione al passaggio del mouse */
+}
+
+.service-box:hover {
+    transform: scale(1.05); /* Ingrandisce il box al passaggio del mouse */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra al passaggio del mouse */
+    background-color: #a8c3d8; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.service-box i {
+    color: #4CAF50; /* Colore dell'icona */
+}
+
+/* Footer */
+footer {
+    background-color: #2c2c2c; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+}
+
+footer a {
+    color: white; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+footer a:hover {
+    color: #5b5b5b; /* Cambia il colore al passaggio del mouse */
+}
+
+/* Navbar */
+.navbar {
+    width: 100%; /* Larghezza al 100% */
+    padding: 1rem; /* Spaziatura interna */
+    position: fixed; /* Posiziona la navbar in modo fisso */
+    top: 0; /* Allinea in alto */
+    z-index: 1000; /* Imposta il livello di sovrapposizione */
+    background: linear-gradient(to bottom, rgba(12, 0, 99, 0.345), rgba(49, 0, 198, 0.244)); /* Sfondo con gradiente */
+    backdrop-filter: blur(10px); /* Aggiunge un effetto di sfocatura */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombra leggera */
+    transition: transform 0.5s ease;
+}
+
+.navbar-brand {
+    font-family: "Arial", sans-serif; /* Applica il font Pacifico */
+    font-weight: 700; /* Spessore del font */
+    font-size: 1.8rem; /* Dimensione del font */
+    color: #ffffff; /* Colore del testo */
+    transition: color 0.3s ease; /* Transizione colore */
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.993); /* Ombra del testo */
+}
+
+.navbar-brand:hover {
+    color: #ffffff; /* Cambia il colore al passaggio del mouse */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 600; /* Spessore del font */
+    font-size: 1.1rem; /* Dimensione del font */
+    padding: 0.5rem 1.5rem; /* Spaziatura interna */
+    color: #fff; /* Colore del testo */
+    transition: all 0.3s ease; /* Transizione generale */
+    border-radius: 5px; /* Bordi arrotondati */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+.nav-item .nav-link:hover {
+    background-color: #ddff0053; /* Colore di sfondo al passaggio del mouse */
+    color: #eeff00; /* Colore del testo al passaggio del mouse */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.639);
+}
+
+.logo-container {
+    display: flex; /* Imposta il display a flessione */
+    align-items: center; /* Allinea verticalmente al centro */
+    padding: 5px 15px; /* Spaziatura interna */
+    border-radius: 20px; /* Arrotondamento del riquadro */
+    background: linear-gradient(to right, rgba(246, 255, 71, 0.712), rgba(0, 0, 0, 0));
+    transition: transform 0.3s ease, box-shadow 0.6s ease, background-color 0.6s ease; /* Aggiunge una transizione al cambiamento di colore */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+.logo {
+    height: 50px; /* Puoi regolare la dimensione del logo */
+    margin-right: 15px; /* Distanza tra logo e testo */
+}
+
+.logo-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.639);
+}
+
+/* Navbar collapse styling */
+.navbar-collapse {
+    justify-content: flex-end; /* Allinea gli elementi della navbar a destra */
+}
+
+/* Navbar mobile */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        background-color: #fff; /* Colore di sfondo per il toggle */
+    }
+    .navbar-toggler-icon {
+        background-color: #000; /* Colore dell'icona */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; } 
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+#cta {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Sfondo con gradiente */
+    color: #fff; /* Testo bianco */
+    text-align: center; /* Allinea al centro */
+    padding: 3rem 1rem; /* Spaziatura interna */
+}
+
+#cta h2 {
+    font-size: 2rem; /* Dimensione del titolo */
+    margin-bottom: 1rem; /* Spaziatura inferiore */
+}
+
+#cta p {
+    font-size: 1.2rem; /* Dimensione del testo */
+    margin-bottom: 2rem; /* Spaziatura inferiore */
+}
+
+#cta .btn {
+    font-size: 1.1rem; /* Dimensione del pulsante */
+    padding: 0.75rem 1.5rem; /* Spaziatura interna del pulsante */
+}
+
+.navbar-toggler {
+    border: none; /* Rimuove il bordo */
+    background: none; /* Rimuove lo sfondo */
+    padding: 0; /* Rimuove la spaziatura interna */
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 255, 255); /* Colore delle lineette */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 255, 255); /* Colore delle lineette */
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px; /* Posizione della prima lineetta */
+}
+
+.navbar-toggler-icon::after {
+    top: 8px; /* Posizione della terza lineetta */
+}
+
+.modern-button {
+    background: #ffffff2c; /* Gradiente di sfondo */
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Arrotonda gli angoli */
+    padding: 7px 7px; /* Spaziatura interna */
+    color: rgba(255, 255, 255, 0); /* Colore del testo */
+    font-size: 1.2rem; /* Dimensione del testo */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: all 0.3s ease; /* Aggiunge una transizione */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+    outline: none; /* Rimuove il bordo bianco */
+}
+
+.modern-button:hover {
+    background: #ffffff4f; /* Gradiente di sfondo */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Aumenta l'ombra al passaggio del mouse */
+    transform: translateY(-2px); /* Solleva leggermente il pulsante */
+}
+
+.modern-button:focus {
+    outline: none; /* Rimuove il bordo bianco al focus */
+}
+
+.navbar.hidden {
+    transform: translateY(-100%); /* Sposta la navbar fuori dallo schermo */
+    transition: transform 0.5s ease; /* Aggiunge una transizione */
+}
+
+/* Stile per il footer */
+footer {
+    background-color: #1b1b1b; /* Sfondo scuro coerente con la navbar */
+    color: #fff; /* Colore del testo */
+    text-align: center; /* Testo centrato */
+    padding: 20px 0; /* Padding per spazio interno */
+    position: relative; /* Posizionamento relativo */
+    width: 100%; /* Larghezza completa */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Effetto di rilievo */
+}
+
+footer p {
+    margin: 0; /* Rimuove il margine */
+    font-size: 16px; /* Dimensione del testo */
+}
+
+footer a {
+    color: #00bcd4; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: color 0.3s ease; /* Transizione per il colore */
+}
+
+footer a:hover {
+    color: #ff4081; /* Cambia colore al passaggio del mouse */
+}

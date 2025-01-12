@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0f1e;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    background: linear-gradient(90deg, #1b1f38, #13172b);
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #00d4ff;
+    text-transform: uppercase;
+}
+
+main {
+    padding: 80px 5vw 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+    background: #1b1f38;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #00d4ff;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+}
+
+p, canvas {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.map-container {
+    position: relative;
+    padding-top: 40%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.map-container iframe {
+    position: absolute; /* Posiziona l'iframe in modo assoluto all'interno del contenitore */
+    top: 0; /* Allinea l'iframe in alto */
+    left: 0; /* Allinea l'iframe a sinistra */
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    height: 100%; /* Imposta l'altezza al 100% del contenitore */
+    border: 0; /* Rimuove il bordo dell'iframe */
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #13172b;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
